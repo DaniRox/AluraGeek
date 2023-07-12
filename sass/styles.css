@@ -1,0 +1,152 @@
+.header {
+  height: 4.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  width: 8rem;
+  padding: 1rem;
+}
+.header .nav {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 480px) {
+  .header .nav {
+    width: 70%;
+    flex-direction: row-reverse;
+  }
+}
+.header .nav .nav__login {
+  color: #FB4D3D;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Barlow", sans-serif;
+  height: 3rem;
+  width: 8rem;
+  border: 1px solid #FB4D3D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .nav .nav__busqueda-img {
+  width: 1.7rem;
+}
+@media screen and (min-width: 480px) {
+  .header .nav .nav__busqueda-img {
+    display: none;
+  }
+}
+.header .nav .nav__busqueda {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .header .nav .nav__busqueda {
+    color: #a2a2a2;
+    font-size: 1.1rem;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    background-color: #EAEBE8;
+    height: 3rem;
+    width: 30rem;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.header .nav .nav__busqueda .nav__busqueda-img {
+  display: flex;
+  width: 1.7rem;
+}
+
+.slide {
+  height: 14rem;
+  color: #FDFDFF;
+}
+.slide .slide__div-img {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide .slide__div-img .slide__gradient {
+  height: 14rem;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.845));
+  position: absolute;
+}
+.slide .slide__div-img .slide__img {
+  height: 18rem;
+}
+.slide .slide__txt {
+  color: #FDFDFF;
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.slide .slide__txt .slide__title {
+  font-size: 2.2rem;
+  font-family: "Fjalla One", sans-serif;
+  margin: 0.5rem 0;
+}
+.slide .slide__txt .slide__subtitle {
+  font-size: 1rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  margin: 0.6rem 1px;
+}
+.slide .slide__txt .slide__btn {
+  color: #FDFDFF;
+  font-size: 1.2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  background-color: #FB4D3D;
+  height: 3rem;
+  width: 10rem;
+  border: none;
+}
+
+.store-star-wars {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.store-star-wars .title-store {
+  color: #000000;
+  font-size: 2rem;
+  font-family: "Fjalla One", sans-serif;
+  margin: 0.5rem 0;
+}
+.store-star-wars .btn-ver-todo {
+  color: #FB4D3D;
+  font-size: 1.2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.store-star-wars .btn-ver-todo .btn-img-arrow {
+  width: 1.4rem;
+}
+.store-star-wars .store-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=styles.css.map */

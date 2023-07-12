@@ -1,0 +1,39 @@
+@use "media-queries";
+
+@use "globales";
+
+.store-star-wars {
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .title-store {
+        color: globales.$black;
+        font-size: 2rem;
+        font-family: globales.$fjalla;
+        margin: 0.5rem 0;
+    }
+
+    .btn-ver-todo {
+        color: globales.$tomato;
+        font-size: 1.2rem;
+        font-family: globales.$barlow;
+        font-weight: 500;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .btn-img-arrow {
+            width: 1.4rem;
+        }
+    }
+
+    .store-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
