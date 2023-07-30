@@ -100,6 +100,22 @@ html {
   }
 }
 
+@media screen and (min-width: 1100px) {
+  .header-articulos {
+    justify-content: flex-start;
+  }
+}
+.header-articulos .nav-articulos {
+  width: 40%;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 1100px) {
+  .header-articulos .nav-articulos {
+    width: 60%;
+    padding-left: 3rem;
+  }
+}
+
 .slide {
   height: 15rem;
   color: #FDFDFF;

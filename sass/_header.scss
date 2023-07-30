@@ -83,3 +83,20 @@
         }
     }
 }
+
+.header-articulos {
+
+    @include media-queries.desktop {
+        justify-content: flex-start;
+    }
+
+    .nav-articulos {
+        width: 40%;
+        justify-content: flex-end;
+
+        @include media-queries.desktop {
+            width: 60%;
+            padding-left: 3rem;
+        }
+    }
+}
