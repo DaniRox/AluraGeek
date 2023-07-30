@@ -3,9 +3,32 @@
 $barlow: 'Barlow', sans-serif;
 $fjalla: 'Fjalla One', sans-serif;
 
-$black: #000000;
-$tomato: #FB4D3D;
-$silver: #a2a2a2;
-$platinum: #EAEBE8;
+$azure: #2A7AE4;
+$outer-space: #464646;
+$silver: #A2A2A2;
+$wite-smoke: #F5F5F5;
+$alice-blue: #EAF2FD;
 $white: #FDFDFF;
 
+html {
+    font-size: 16px;
+
+    @include media-queries.tablet {
+        font-size: 18px;
+    }
+
+    @include media-queries.desktop-s {
+        font-size: 20px;
+    }
+
+    @include media-queries.desktop {
+        font-size: 22px;
+    }
+}
+
+@mixin btn {
+    font-size: 1.1rem;
+    font-family: $barlow;
+    font-weight: 500;
+    height: 3rem;
+}

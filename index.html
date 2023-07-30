@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;500&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;500;600&family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./sass/styles.css">
     <link rel="icon" href="./assets/icons/favicon.png" sizes="40x30">
@@ -15,11 +15,11 @@
 <body>
     
     <header class="header">
-        <img class="logo" src="./assets/icons/Logologo.svg">
+        <img class="logo" src="./assets/icons/logo-alurageek.svg" alt="logo-alurageek">
         <div class="nav">
-            <div class="nav__login">Login</div>
-            <img src="./assets/icons/icon-lupa.svg" class="nav__busqueda-img">
-            <div class="nav__busqueda">¿Que deseas buscar?<img src="./assets/icons/icon-lupa.svg" class="nav__busqueda-img"></div>
+            <button class="nav__btn-login">Login</button>
+            <img src="./assets/icons/icon-lupa.svg" class="nav__busqueda-img" alt="icono-lupa">
+            <input class="nav__input-busqueda" placeholder="¿Que deseas buscar?"></input>
         </div>
     </header>
 
@@ -40,49 +40,52 @@
 
         <section class="store">
 
-            <div class="store-star-wars">
+            <div class="store-title">
 
-                <h1 class="title-store">Star Wars</h1>
-                <button class="btn-ver-todo">Ver todo<img class="btn-img-arrow" src="./assets/icons/arrow.svg"></button>
+                <div class="div-title-store">
+                    <h1 class="title-store">Star Wars</h1>
+                    <button class="btn-ver-todo">Ver todo<img class="btn-img-arrow" src="./assets/icons/arrow.svg"></button>
+                </div>
+                
                 <div class="store-container">
 
                     <div class="item">
-                        <img class="item__img" src="./assets/img/item1.png">
+                        <img class="item__img" src="./assets/img/item1.png" alt="imagen-producto">
                         <h1 class="item__title">Producto XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item2.png">
+                        <img class="item__img"  src="./assets/img/item2.png" alt="imagen-producto">
                         <h1 class="item__title">Producto XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item3.png">
+                        <img class="item__img"  src="./assets/img/item3.png" alt="imagen-producto">
                         <h1 class="item__title">Producto XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item4.png">
+                        <img class="item__img"  src="./assets/img/item4.png" alt="imagen-producto">
                         <h1 class="item__title">Producto XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item5.png">
+                        <img class="item__img"  src="./assets/img/item5.png" alt="imagen-producto">
                         <h1 class="item__title">Producto XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item6.png">
+                        <img class="item__img"  src="./assets/img/item6.png" alt="imagen-producto">
                         <h1 class="item__title">Producto XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
@@ -91,49 +94,52 @@
                 </div>
             </div>
 
-            <div class="store-consolas">
+            <div class="store-title">
 
-                <h1 class="title">Consolas</h1>
-                <button class="btn-ver-todo">Ver Todo<img src="./assets/icons/arrow.svg"></button>
+                <div class="div-title-store">
+                    <h1 class="title-store">Consolas</h1>
+                    <button class="btn-ver-todo">Ver Todo<img src="./assets/icons/arrow.svg"></button>
+                </div>
+                
                 <div class="store-container">
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item7.png">
+                        <img class="item__img"  src="./assets/img/item7.png" alt="imagen-producto">
                         <h1 class="item__title">Control XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item8.png">
+                        <img class="item__img"  src="./assets/img/item8.png" alt="imagen-producto">
                         <h1 class="item__title">Control y consola XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item9.png">
+                        <img class="item__img"  src="./assets/img/item9.png" alt="imagen-producto">
                         <h1 class="item__title">Consola XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item10.png">
+                        <img class="item__img"  src="./assets/img/item10.png" alt="imagen-producto">
                         <h1 class="item__title">Control XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item11.png">
+                        <img class="item__img"  src="./assets/img/item11.png" alt="imagen-producto">
                         <h1 class="item__title">Consola XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
                     
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item12.png">
+                        <img class="item__img"  src="./assets/img/item12.png" alt="imagen-producto">
                         <h1 class="item__title">Game Boy Color</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
@@ -142,49 +148,52 @@
                 </div>
             </div>
 
-            <div class="store-diversos">
+            <div class="store-title">
 
-                <h1 class="title">Diversos</h1>
-                <button class="btn-ver-todo">Ver Todo<img src="./assets/icons/arrow.svg"></button>
+                <div class="div-title-store">
+                    <h1 class="title-store">Diversos</h1>
+                    <button class="btn-ver-todo">Ver Todo<img src="./assets/icons/arrow.svg"></button>
+                </div>
+                
                 <div class="store-container">
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item13.png">
+                        <img class="item__img"  src="./assets/img/item13.png" alt="imagen-producto">
                         <h1 class="item__title">Camisa Atari</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item14.png">
+                        <img class="item__img"  src="./assets/img/item14.png" alt="imagen-producto">
                         <h1 class="item__title">Camisa SNES</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item15.png">
+                        <img class="item__img"  src="./assets/img/item15.png" alt="imagen-producto">
                         <h1 class="item__title">Control y consola XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item16.png">
+                        <img class="item__img"  src="./assets/img/item16.png" alt="imagen-producto">
                         <h1 class="item__title">Control y consola XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item17.png">
+                        <img class="item__img"  src="./assets/img/item17.png" alt="imagen-producto">
                         <h1 class="item__title">Control y consola XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item18.png">
+                        <img class="item__img"  src="./assets/img/item18.png" alt="imagen-producto">
                         <h1 class="item__title">Producto XYZ</h1>
                         <span class="item__cost">$ 60,00</span>
                         <a class="item__ver-producto">Ver producto</a>
@@ -198,13 +207,16 @@
         <section class="contacto">
 
             <div class="mas-info">
-                <img src="./assets/icons/Logologo.svg" class="logo-info">
-                <span class="span-info">Quienes somos</span>
-                <span class="span-info">Política de privacidad</span>
-                <span class="span-info">Programa de fidelidad</span>
-                <span class="span-info">Nuestras tiendas</span>
-                <span class="span-info">Quiero ser franquiciado</span>
-                <span class="span-info">Anúncie aquí</span>
+                <img src="./assets/icons/logo-alurageek.svg" class="logo-info" alt="logo-alurageek">
+                <div class="div-span-info">
+                    <span class="span-info">Quienes somos</span>
+                    <span class="span-info">Política de privacidad</span>
+                    <span class="span-info">Programa de fidelidad</span>
+                    <span class="span-info">Nuestras tiendas</span>
+                    <span class="span-info">Quiero ser franquiciado</span>
+                    <span class="span-info">Anúncie aquí</span>
+                </div>
+
             </div>
 
             <div class="formulario">
@@ -226,8 +238,11 @@
 
     </main>
 
-    <footer>
-        <p class="div-footer__txt">Diseño y desarollo por <img src="./assets/icons/logo-DaniRox.svg" class="div-footer__icon"></p>
+    <footer class="footer">
+
+        <p class="footer__txt">Desarrollado por <a href="https://danirox.github.io/DaniRox-Portfolio/" target="_blank" class="footer__link">DaniRox</a></p>
+        <p class="footer__año">2022</p>
+
     </footer>
     
 </body>

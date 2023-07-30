@@ -1,0 +1,150 @@
+@use "media-queries";
+
+@use "globales";
+
+
+@mixin txt-input {
+    font-family: globales.$barlow;
+    font-weight: 400;
+}
+
+.contacto {
+    background-color: globales.$alice-blue;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+
+    @include media-queries.desktop-s {
+        flex-direction: row;
+    }
+
+    @include media-queries.desktop {
+        padding: 5% 10%;
+        justify-content: space-between;
+    }
+
+    .mas-info {
+        color: globales.$outer-space;
+        font-size: 1.2rem;
+        font-family: globales.$barlow;
+        font-weight: 400;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include media-queries.desktop-s {
+            width: 40%;
+            margin-bottom: 0rem;
+            align-items: flex-start;
+        }
+
+        @include media-queries.desktop {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 55%;
+        }
+
+        .logo-info {
+            width: 12rem;
+            margin-bottom: 1rem;
+        }
+
+        .div-span-info {
+            height: 12rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @include media-queries.desktop-s {
+                height: 17rem;
+            }
+
+            @include media-queries.desktop {
+                margin: 0 3rem;
+            }
+
+            .span-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @include media-queries.desktop-s {
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+
+    .formulario {
+
+        @include media-queries.desktop-s {
+            width: 60%;
+        }
+
+        @include media-queries.desktop {
+            width: 40%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            .title-form {
+                @include txt-input;
+                color: globales.$outer-space;
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+            .group-input {
+                background-color: globales.$white;
+                margin: 1rem 0;
+                padding: 0.8rem;
+                display: flex;
+                flex-direction: column;
+                border-bottom: 0.5px solid globales.$outer-space;
+                border-radius: 0.1rem;
+
+                label {
+                    @include txt-input;
+                    color: globales.$silver;
+                    font-size: 1.1rem;
+                }
+
+                input {
+                    @include txt-input;
+                    color: globales.$outer-space;
+                    font-size: 1.4rem;
+                    margin-top: 0.2rem;
+                    border: none;
+
+                    &:focus-visible {
+                        outline: none;
+                    }
+                }
+
+                textarea {
+                    @include txt-input;
+                    color: globales.$outer-space;
+                    font-size: 1.4rem;
+                    margin-top: 0.2rem;
+                    resize: none;
+                    border: none;
+
+                    &:focus-visible {
+                        outline: none;
+                    }
+                }
+            }
+
+            .btn-form {
+                @include globales.btn;
+                color: globales.$white;
+                background-color: globales.$azure;
+                width: 9rem;
+                border: none;
+            }
+        }
+    }
+}

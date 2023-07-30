@@ -1,0 +1,37 @@
+@use "media-queries";
+
+@use "globales";
+
+
+.footer {
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .footer__txt {
+        color: globales.$outer-space;
+        font-family: globales.$barlow;
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin: 3px;
+
+        .footer__link {
+            color: globales.$outer-space;
+            font-family: globales.$barlow;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 3px;
+            text-decoration: none;
+        }
+    }
+    
+    .footer__año {
+        color: globales.$outer-space;
+        font-family: globales.$barlow;
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin: 3px;
+    }
+}

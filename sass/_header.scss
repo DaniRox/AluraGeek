@@ -3,75 +3,82 @@
 @use "globales";
 
 .header {
-    height: 4.5rem;
-    width: 100%;
+    height: 6rem;
+    width: auto;
+    margin: 0 5%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
+    @include media-queries.desktop {
+        margin: 0 10%;
+    }
 
     .logo {
-        width: 8rem;
-        padding: 1rem;
+        width: 9rem;
+
+        @include media-queries.desktop-s {
+            width: 10rem;
+        }
     }
 
     .nav {
-        width: 50%;
-        padding: 1rem;
+        width: 60%;
+        padding-left: 1rem;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
 
 
-        @include media-queries.tablet {
-            width: 70%;
+        @include media-queries.desktop {
+            width: 78%;
             flex-direction: row-reverse;
         }
 
 
-        .nav__login {
-            color: globales.$tomato;
-            font-size: 1.1rem;
-            font-weight: 500;
-            font-family: globales.$barlow;
-            height: 3rem;
-            width: 8rem;
-            border: 1px solid globales.$tomato;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .nav__btn-login {
+            @include globales.btn;
+            color: globales.$azure;
+            width: 12rem;
+            background-color: transparent;
+            border: 1px solid globales.$azure;
+            cursor: pointer;
         }
 
         .nav__busqueda-img {
             width: 1.7rem;
 
-            @include media-queries.tablet {
+            @include media-queries.desktop {
                 display: none;
             }
         }
 
-        .nav__busqueda {
+        .nav__input-busqueda {
             display: none;
 
-            @include media-queries.tablet {
-                color: globales.$silver;
+            @include media-queries.desktop {
+                color: globales.$outer-space;
                 font-size: 1.1rem;
                 font-family: globales.$barlow;
                 font-weight: 300;
-                background-color: globales.$platinum;
-                height: 3rem;
-                width: 30rem;
+                background-color: globales.$wite-smoke;
+                background-image: url(../assets/icons/icon-lupa.svg);
+                background-repeat: no-repeat;
+                background-position: 95%;
+                height: 2.5rem;
+                width: 55%;
                 padding: 0 1rem;
+                border: none;
                 border-radius: 2rem;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-            }
 
-            .nav__busqueda-img {
-                display: flex;
-                width: 1.7rem;
+                &:focus-visible {
+                    outline: none;
+                }
             }
         }
     }

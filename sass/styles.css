@@ -1,76 +1,123 @@
-.header {
-  height: 4.5rem;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.header .logo {
-  width: 8rem;
-  padding: 1rem;
-}
-.header .nav {
-  width: 50%;
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+@charset "UTF-8";
+html {
+  font-size: 16px;
 }
 @media screen and (min-width: 480px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 770px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+.header {
+  height: 6rem;
+  width: auto;
+  margin: 0 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1100px) {
+  .header {
+    margin: 0 10%;
+  }
+}
+.header .logo {
+  width: 9rem;
+}
+@media screen and (min-width: 770px) {
+  .header .logo {
+    width: 10rem;
+  }
+}
+.header .nav {
+  width: 60%;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1100px) {
   .header .nav {
-    width: 70%;
+    width: 78%;
     flex-direction: row-reverse;
   }
 }
-.header .nav .nav__login {
-  color: #FB4D3D;
+.header .nav .nav__btn-login {
   font-size: 1.1rem;
-  font-weight: 500;
   font-family: "Barlow", sans-serif;
+  font-weight: 500;
   height: 3rem;
-  width: 8rem;
-  border: 1px solid #FB4D3D;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #2A7AE4;
+  width: 12rem;
+  background-color: transparent;
+  border: 1px solid #2A7AE4;
+  cursor: pointer;
 }
 .header .nav .nav__busqueda-img {
   width: 1.7rem;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1100px) {
   .header .nav .nav__busqueda-img {
     display: none;
   }
 }
-.header .nav .nav__busqueda {
+.header .nav .nav__input-busqueda {
   display: none;
 }
-@media screen and (min-width: 480px) {
-  .header .nav .nav__busqueda {
-    color: #a2a2a2;
+@media screen and (min-width: 1100px) {
+  .header .nav .nav__input-busqueda {
+    color: #464646;
     font-size: 1.1rem;
     font-family: "Barlow", sans-serif;
     font-weight: 300;
-    background-color: #EAEBE8;
-    height: 3rem;
-    width: 30rem;
+    background-color: #F5F5F5;
+    background-image: url(../assets/icons/icon-lupa.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    height: 2.5rem;
+    width: 55%;
     padding: 0 1rem;
+    border: none;
     border-radius: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-}
-.header .nav .nav__busqueda .nav__busqueda-img {
-  display: flex;
-  width: 1.7rem;
+  .header .nav .nav__input-busqueda:focus-visible {
+    outline: none;
+  }
 }
 
 .slide {
-  height: 14rem;
+  height: 15rem;
   color: #FDFDFF;
+}
+@media screen and (min-width: 480px) {
+  .slide {
+    height: 19rem;
+  }
+}
+@media screen and (min-width: 770px) {
+  .slide {
+    height: 22rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .slide {
+    height: 26rem;
+  }
 }
 .slide .slide__div-img {
   height: 100%;
@@ -80,73 +127,361 @@
   align-items: center;
 }
 .slide .slide__div-img .slide__gradient {
-  height: 14rem;
+  height: 15rem;
   width: 100%;
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.845));
   position: absolute;
 }
+@media screen and (min-width: 480px) {
+  .slide .slide__div-img .slide__gradient {
+    height: 19rem;
+  }
+}
+@media screen and (min-width: 770px) {
+  .slide .slide__div-img .slide__gradient {
+    height: 22rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .slide .slide__div-img .slide__gradient {
+    height: 26rem;
+  }
+}
 .slide .slide__div-img .slide__img {
-  height: 18rem;
+  width: 120%;
+}
+@media screen and (min-width: 770px) {
+  .slide .slide__div-img .slide__img {
+    width: 100%;
+  }
 }
 .slide .slide__txt {
   color: #FDFDFF;
-  width: 100%;
   position: absolute;
-  top: 25%;
+  top: 16%;
   margin: 5%;
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 480px) {
+  .slide .slide__txt {
+    top: 23%;
+  }
+}
+@media screen and (min-width: 770px) {
+  .slide .slide__txt {
+    top: 28%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .slide .slide__txt {
+    margin: 5% 10%;
+    top: 35%;
+  }
+}
 .slide .slide__txt .slide__title {
   font-size: 2.2rem;
   font-family: "Fjalla One", sans-serif;
-  margin: 0.5rem 0;
+}
+@media screen and (min-width: 480px) {
+  .slide .slide__txt .slide__title {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (min-width: 770px) {
+  .slide .slide__txt .slide__title {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .slide .slide__txt .slide__title {
+    font-size: 4rem;
+  }
 }
 .slide .slide__txt .slide__subtitle {
   font-size: 1rem;
   font-family: "Barlow", sans-serif;
-  font-weight: 300;
-  margin: 0.6rem 1px;
+  font-weight: 400;
+  margin: 1rem 1px;
+}
+@media screen and (min-width: 480px) {
+  .slide .slide__txt .slide__subtitle {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 770px) {
+  .slide .slide__txt .slide__subtitle {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .slide .slide__txt .slide__subtitle {
+    font-size: 1.4rem;
+  }
 }
 .slide .slide__txt .slide__btn {
-  color: #FDFDFF;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
-  background-color: #FB4D3D;
   height: 3rem;
-  width: 10rem;
+  color: #FDFDFF;
+  background-color: #2A7AE4;
+  width: 9rem;
   border: none;
 }
 
-.store-star-wars {
-  margin: 5%;
+.store-title {
+  margin: 2% 5%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
-.store-star-wars .title-store {
-  color: #000000;
+@media screen and (min-width: 1100px) {
+  .store-title {
+    margin: 3% 10%;
+  }
+}
+.store-title .div-title-store {
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.store-title .div-title-store .title-store {
+  color: #464646;
   font-size: 2rem;
   font-family: "Fjalla One", sans-serif;
   margin: 0.5rem 0;
 }
-.store-star-wars .btn-ver-todo {
-  color: #FB4D3D;
+.store-title .div-title-store .btn-ver-todo {
+  color: #2A7AE4;
   font-size: 1.2rem;
   font-family: "Barlow", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   background-color: transparent;
   border: none;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.store-star-wars .btn-ver-todo .btn-img-arrow {
+.store-title .div-title-store .btn-ver-todo .btn-img-arrow {
   width: 1.4rem;
 }
-.store-star-wars .store-container {
+.store-title .store-container {
+  height: 35rem;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media screen and (min-width: 770px) {
+  .store-title .store-container {
+    height: 19rem;
+    justify-content: space-between;
+  }
+}
+.store-title .store-container .item {
+  height: 16rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+}
+@media screen and (min-width: 770px) {
+  .store-title .store-container .item {
+    padding: 0.6rem;
+  }
+}
+.store-title .store-container .item .item__img {
+  width: 10.5rem;
+}
+.store-title .store-container .item .item__title {
+  color: #464646;
+  font-size: 1.2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+.store-title .store-container .item .item__cost {
+  color: #464646;
+  font-size: 1.3rem;
+  font-family: "Fjalla One", sans-serif;
+}
+.store-title .store-container .item .item__ver-producto {
+  color: #2A7AE4;
+  font-size: 1.2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+.contacto {
+  background-color: #EAF2FD;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 770px) {
+  .contacto {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .contacto {
+    padding: 5% 10%;
+    justify-content: space-between;
+  }
+}
+.contacto .mas-info {
+  color: #464646;
+  font-size: 1.2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 770px) {
+  .contacto .mas-info {
+    width: 40%;
+    margin-bottom: 0rem;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .contacto .mas-info {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 55%;
+  }
+}
+.contacto .mas-info .logo-info {
+  width: 12rem;
+  margin-bottom: 1rem;
+}
+.contacto .mas-info .div-span-info {
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 770px) {
+  .contacto .mas-info .div-span-info {
+    height: 17rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .contacto .mas-info .div-span-info {
+    margin: 0 3rem;
+  }
+}
+.contacto .mas-info .div-span-info .span-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 770px) {
+  .contacto .mas-info .div-span-info .span-info {
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 770px) {
+  .contacto .formulario {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .contacto .formulario {
+    width: 40%;
+  }
+}
+.contacto .formulario form {
+  display: flex;
+  flex-direction: column;
+}
+.contacto .formulario form .title-form {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  color: #464646;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.contacto .formulario form .group-input {
+  background-color: #FDFDFF;
+  margin: 1rem 0;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5px solid #464646;
+  border-radius: 0.1rem;
+}
+.contacto .formulario form .group-input label {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  color: #A2A2A2;
+  font-size: 1.1rem;
+}
+.contacto .formulario form .group-input input {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  color: #464646;
+  font-size: 1.4rem;
+  margin-top: 0.2rem;
+  border: none;
+}
+.contacto .formulario form .group-input input:focus-visible {
+  outline: none;
+}
+.contacto .formulario form .group-input textarea {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  color: #464646;
+  font-size: 1.4rem;
+  margin-top: 0.2rem;
+  resize: none;
+  border: none;
+}
+.contacto .formulario form .group-input textarea:focus-visible {
+  outline: none;
+}
+.contacto .formulario form .btn-form {
+  font-size: 1.1rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  height: 3rem;
+  color: #FDFDFF;
+  background-color: #2A7AE4;
+  width: 9rem;
+  border: none;
+}
+
+.footer {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer__txt {
+  color: #464646;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 3px;
+}
+.footer .footer__txt .footer__link {
+  color: #464646;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 3px;
+  text-decoration: none;
+}
+.footer .footer__año {
+  color: #464646;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 3px;
 }/*# sourceMappingURL=styles.css.map */
