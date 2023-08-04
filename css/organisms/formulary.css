@@ -1,0 +1,19 @@
+@import url(../styles.css);
+
+.formulary {
+    margin: 2rem 0;
+}
+
+
+@media only screen and (min-width: 770px) {
+    .formulary {
+        width: 60%;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .formulary {
+        width: 45%;
+    }
+}

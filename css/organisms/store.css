@@ -1,0 +1,7 @@
+@import url(../styles.css);
+
+.store {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

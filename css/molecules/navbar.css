@@ -1,0 +1,17 @@
+@import url(../styles.css);
+
+.navbar {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media only screen and (min-width: 770px) {
+    .navbar {
+        width: 75%;
+        flex-direction: row-reverse;
+    }
+}

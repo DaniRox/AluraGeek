@@ -1,0 +1,8 @@
+@import url(../styles.css);
+
+label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--silver);
+}

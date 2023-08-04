@@ -1,0 +1,28 @@
+@import url(../styles.css);
+
+.img-start {
+    height: 15rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+@media only screen and (min-width: 480px) {
+    .img-start {
+        height: 16rem;
+    }
+}
+
+@media only screen and (min-width: 770px) {
+    .img-start {
+        height: 17rem;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .img-start {
+        height: 19rem;
+    }
+}

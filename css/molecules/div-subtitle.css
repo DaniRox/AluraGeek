@@ -1,0 +1,9 @@
+@import url(../styles.css);
+
+.div-subtitle {
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

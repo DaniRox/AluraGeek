@@ -4,199 +4,225 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;500;600&family=Fjalla+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./sass/styles.css">
+    <!-- reset styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- global styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- atoms -->
+    <link rel="stylesheet" href="./css/atoms/buttons.css">
+    <link rel="stylesheet" href="./css/atoms/icons.css">
+    <link rel="stylesheet" href="./css/atoms/images.css">
+    <link rel="stylesheet" href="./css/atoms/input-search.css">
+    <link rel="stylesheet" href="./css/atoms/input.css">
+    <link rel="stylesheet" href="./css/atoms/label.css">
+    <!-- moelcules -->
+    <link rel="stylesheet" href="./css/molecules/item.css">
+    <link rel="stylesheet" href="./css/molecules/div-subtitle.css">
+    <link rel="stylesheet" href="./css/molecules/div-info.css">
+    <link rel="stylesheet" href="./css/molecules/img-start.css">
+    <link rel="stylesheet" href="./css/molecules/txt-start.css">
+    <link rel="stylesheet" href="./css/molecules/navbar.css">
+    <link rel="stylesheet" href="./css/molecules/footer.css">
+    <link rel="stylesheet" href="./css/molecules/group-input.css">
+    <!-- organisms -->
+    <link rel="stylesheet" href="./css/organisms/items-container.css">
+    <link rel="stylesheet" href="./css/organisms/store.css">
+    <link rel="stylesheet" href="./css/organisms/store-container.css">
+    <link rel="stylesheet" href="./css/organisms/header.css">
+    <link rel="stylesheet" href="./css/organisms/contact.css">
+    <link rel="stylesheet" href="./css/organisms/start.css">
+    <link rel="stylesheet" href="./css/organisms/info-container.css">
+    <link rel="stylesheet" href="./css/organisms/formulary.css">
+
     <link rel="icon" href="./assets/icons/favicon.png" sizes="40x30">
     <title>AluraGeek</title>
 </head>
 <body>
     
     <header class="header">
-        <img class="logo" src="./assets/icons/logo-alurageek.svg" alt="logo-alurageek">
-        <div class="nav">
-            <button class="nav__btn-login">Login</button>
-            <img src="./assets/icons/icon-lupa.svg" class="nav__busqueda-img" alt="icono-lupa">
-            <input class="nav__input-busqueda" placeholder="¿Que deseas buscar?"></input>
+        <img class="logo--header" src="./assets/icons/logo-alurageek.svg" alt="logo-alurageek">
+        <div class="navbar">
+            <button class="btn-simple">Login</button>
+            <img src="./assets/icons/icon-lupa.svg" class="btn-search" alt="icono-lupa">
+            <input class="input-search" placeholder="¿Que deseas buscar?"></input>
         </div>
     </header>
-
+    
+    
     <main class="main">
 
-        <section class="slide">
-            <div class="slide__div-img">
-                <div class="slide__gradient"></div>
-                <img class="slide__img" src="./assets/img/banner.png">
+        <section class="start">
+            <div class="img-start">
+                <div class="gradient-header"></div>
+                <img class="img-banner" src="./assets/img/banner.png">
             </div>
-            <div class="slide__txt">
-                <h1 class="slide__title">Febrero Promocional</h1>
-                <span class="slide__subtitle">Productos seleccionados con 33% de descuento</span>
-                <button class="slide__btn">Ver Consolas</button>
+            <div class="txt-start">
+                <h1 class="title title--white">Febrero Promocional</h1>
+                <span class="subtitle subtitle--white">Productos seleccionados con 33% de descuento</span>
+                <button class="btn">Ver Consolas</button>
             </div>     
 
         </section>
 
-        <section class="store">
+        <section class="store-container">
 
-            <div class="store-title">
+            <div class="store">
 
-                <div class="div-title-store">
-                    <h1 class="title-store">Star Wars</h1>
-                    <button class="btn-ver-todo">Ver todo<img class="btn-img-arrow" src="./assets/icons/arrow.svg"></button>
+                <div class="div-subtitle">
+                    <h1 class="subtitle">Star Wars</h1>
+                    <button class="btn-txt">Ver todo<img class="btn-img-arrow" src="./assets/icons/arrow.svg"></button>
                 </div>
                 
-                <div class="store-container">
+                <div class="items-container">
 
                     <div class="item" id="">
-                        <img class="item__img" src="./assets/img/item1.png" alt="imagen-producto">
-                        <h1 class="item__title">Producto XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item" src="./assets/img/item1.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Producto XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item2.png" alt="imagen-producto">
-                        <h1 class="item__title">Producto XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item2.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Producto XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item3.png" alt="imagen-producto">
-                        <h1 class="item__title">Producto XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item3.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Producto XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item4.png" alt="imagen-producto">
-                        <h1 class="item__title">Producto XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item4.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Producto XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item5.png" alt="imagen-producto">
-                        <h1 class="item__title">Producto XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item5.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Producto XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item6.png" alt="imagen-producto">
-                        <h1 class="item__title">Producto XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item6.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Producto XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                 </div>
             </div>
 
-            <div class="store-title">
+            <div class="store">
 
-                <div class="div-title-store">
-                    <h1 class="title-store">Consolas</h1>
-                    <button class="btn-ver-todo">Ver Todo<img src="./assets/icons/arrow.svg"></button>
+                <div class="div-subtitle">
+                    <h1 class="subtitle">Consolas</h1>
+                    <button class="btn-txt">Ver Todo<img src="./assets/icons/arrow.svg"></button>
                 </div>
                 
-                <div class="store-container">
+                <div class="items-container">
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item7.png" alt="imagen-producto">
-                        <h1 class="item__title">Control XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item7.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Control XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item8.png" alt="imagen-producto">
-                        <h1 class="item__title">Control y consola XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item8.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Control y consola XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item9.png" alt="imagen-producto">
-                        <h1 class="item__title">Consola XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item9.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Consola XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item10.png" alt="imagen-producto">
-                        <h1 class="item__title">Control XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item10.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Control XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item11.png" alt="imagen-producto">
-                        <h1 class="item__title">Consola XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item11.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Consola XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
                     
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item12.png" alt="imagen-producto">
-                        <h1 class="item__title">Game Boy Color</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item12.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Game Boy Color</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                 </div>
             </div>
 
-            <div class="store-title">
+            <div class="store">
 
-                <div class="div-title-store">
-                    <h1 class="title-store">Diversos</h1>
-                    <button class="btn-ver-todo">Ver Todo<img src="./assets/icons/arrow.svg"></button>
+                <div class="div-subtitle">
+                    <h1 class="subtitle">Diversos</h1>
+                    <button class="btn-txt">Ver Todo<img src="./assets/icons/arrow.svg"></button>
                 </div>
                 
-                <div class="store-container">
+                <div class="items-container">
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item13.png" alt="imagen-producto">
-                        <h1 class="item__title">Camisa Atari</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item13.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Camisa Atari</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item14.png" alt="imagen-producto">
-                        <h1 class="item__title">Camisa SNES</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item14.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Camisa SNES</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item15.png" alt="imagen-producto">
-                        <h1 class="item__title">Control y consola XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item15.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Control y consola XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item16.png" alt="imagen-producto">
-                        <h1 class="item__title">Control y consola XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item16.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Control y consola XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item17.png" alt="imagen-producto">
-                        <h1 class="item__title">Control y consola XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item17.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Control y consola XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                     <div class="item">
-                        <img class="item__img"  src="./assets/img/item18.png" alt="imagen-producto">
-                        <h1 class="item__title">Producto XYZ</h1>
-                        <span class="item__cost">$ 60,00</span>
-                        <a class="item__ver-producto">Ver producto</a>
+                        <img class="img-item"  src="./assets/img/item18.png" alt="imagen-producto">
+                        <h1 class="txt txt--small">Producto XYZ</h1>
+                        <span class="txt txt--em">$ 60,00</span>
+                        <button class="btn-txt" >Ver producto</button>
                     </div>
 
                 </div>
@@ -204,24 +230,24 @@
 
         </section>
 
-        <section class="contacto">
+        <section class="contact">
 
-            <div class="mas-info">
-                <img src="./assets/icons/logo-alurageek.svg" class="logo-info" alt="logo-alurageek">
-                <div class="div-span-info">
-                    <span class="span-info">Quienes somos</span>
-                    <span class="span-info">Política de privacidad</span>
-                    <span class="span-info">Programa de fidelidad</span>
-                    <span class="span-info">Nuestras tiendas</span>
-                    <span class="span-info">Quiero ser franquiciado</span>
-                    <span class="span-info">Anúncie aquí</span>
+            <div class="info-container">
+                <img src="./assets/icons/logo-alurageek.svg" class="logo--info" alt="logo-alurageek">
+                <div class="div-info">
+                    <span class="txt">Quienes somos</span>
+                    <span class="txt">Política de privacidad</span>
+                    <span class="txt">Programa de fidelidad</span>
+                    <span class="txt">Nuestras tiendas</span>
+                    <span class="txt">Quiero ser franquiciado</span>
+                    <span class="txt">Anúncie aquí</span>
                 </div>
 
             </div>
 
-            <div class="formulario">
+            <div class="formulary">
                 <form>
-                    <span class="title-form">Hable con nosotros</span>
+                    <span class="txt txt--em">Hable con nosotros</span>
                     <div class="group-input">
                         <label for="nombre">Nombre</label>
                         <input id="nombre" name="nombre" type="text" required>
@@ -230,7 +256,7 @@
                         <label for="mensaje">Escribe tu mensaje</label>
                         <textarea id="mensaje" name="mensaje"></textarea>
                     </div>
-                    <button class="btn-form" type="submit">Enviar mensaje</button>
+                    <button class="btn" type="submit">Enviar mensaje</button>
                 </form>
             </div>
 
@@ -240,8 +266,8 @@
 
     <footer class="footer">
 
-        <p class="footer__txt">Desarrollado por <a href="https://danirox.github.io/DaniRox-Portfolio/" target="_blank" class="footer__link">DaniRox</a></p>
-        <p class="footer__año">2022</p>
+        <p class="txt txt--small">Desarrollado por <a href="https://danirox.github.io/DaniRox-Portfolio/" target="_blank" class="txt txt--em">DaniRox</a></p>
+        <p class="txt txt--small">2022</p>
 
     </footer>
     

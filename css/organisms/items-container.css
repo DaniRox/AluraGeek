@@ -1,0 +1,18 @@
+@import url(../styles.css);
+
+.items-container {
+    height: 32rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+@media only screen and (min-width: 770px) {
+    .items-container {
+        height: 16rem;
+    }
+}

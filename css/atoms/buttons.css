@@ -1,0 +1,55 @@
+@import url(../styles.css);
+
+.btn {
+    width: 9rem;
+    height: 2.8em;
+    color: var(--white);
+    background-color: var(--azure);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-simple {
+    width: 9rem;
+    height: 2.8em;
+    color: var(--azure);
+    background-color: var(--white);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--azure);
+    cursor: pointer;
+}
+
+.btn-txt {
+    color: var(--azure);
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btn-search {
+    width: 1.3rem;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 770px) {
+    .btn-search {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+
+}

@@ -1,0 +1,11 @@
+@import url(../styles.css);
+
+.group-input {
+    border-bottom: 0.5px solid var(--outer-space);
+    border-radius: 0.1rem;
+    background-color: var(--white);
+    margin: 1rem 0;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+}
