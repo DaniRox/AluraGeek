@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- reset styles -->
+        <link rel="stylesheet" href="../css/reset.css">
+        <!-- global styles -->
+        <link rel="stylesheet" href="../css/styles.css">
+        <!-- atoms -->
+        <link rel="stylesheet" href="../css/atoms/buttons.css">
+        <link rel="stylesheet" href="../css/atoms/icons.css">
+        <link rel="stylesheet" href="../css/atoms/images.css">
+        <link rel="stylesheet" href="../css/atoms/input-search.css">
+        <link rel="stylesheet" href="../css/atoms/input.css">
+        <link rel="stylesheet" href="../css/atoms/label.css">
+        <!-- moelcules -->
+        <link rel="stylesheet" href="../css/molecules/item.css">
+        <link rel="stylesheet" href="../css/molecules/div-subtitle.css">
+        <link rel="stylesheet" href="../css/molecules/div-info.css">
+        <link rel="stylesheet" href="../css/molecules/img-start.css">
+        <link rel="stylesheet" href="../css/molecules/txt-start.css">
+        <link rel="stylesheet" href="../css/molecules/navbar.css">
+        <link rel="stylesheet" href="../css/molecules/footer.css">
+        <link rel="stylesheet" href="../css/molecules/group-input.css">
+        <!-- organisms -->
+        <link rel="stylesheet" href="../css/organisms/items-container.css">
+        <link rel="stylesheet" href="../css/organisms/store.css">
+        <link rel="stylesheet" href="../css/organisms/store-container.css">
+        <link rel="stylesheet" href="../css/organisms/header.css">
+        <link rel="stylesheet" href="../css/organisms/contact.css">
+        <link rel="stylesheet" href="../css/organisms/start.css">
+        <link rel="stylesheet" href="../css/organisms/info-container.css">
+        <link rel="stylesheet" href="../css/organisms/formulary.css">
+        <link rel="icon" href="../assets/icons/favicon.png">
+        <title>Artículos</title>
+    </head>
+<body>
+
+    <header class="header">
+        <img class="logo--header" src="../assets/icons/logo-alurageek.svg" alt="logo-alurageek">
+        <div class="nav nav-articulos">
+            <img src="../assets/icons/icon-lupa.svg" class="btn-search" alt="icono-lupa">
+            <input class="input-search" placeholder="¿Que deseas buscar?"></input>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="articles-container">
+
+            <div class="items-container" id="articles-container">
+
+            </div>
+
+        </section>
+
+        <section class="contact">
+
+            <div class="info-container">
+                <img src="../assets/icons/logo-alurageek.svg" class="logo--info" alt="logo-alurageek">
+                <div class="div-info">
+                    <span class="txt">Quienes somos</span>
+                    <span class="txt">Política de privacidad</span>
+                    <span class="txt">Programa de fidelidad</span>
+                    <span class="txt">Nuestras tiendas</span>
+                    <span class="txt">Quiero ser franquiciado</span>
+                    <span class="txt">Anúncie aquí</span>
+                </div>
+
+            </div>
+
+            <div class="formulary">
+                <form>
+                    <span class="txt txt--em">Hable con nosotros</span>
+                    <div class="group-input">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" required>
+                    </div>
+                    <div class="group-input">
+                        <label for="mensaje">Escribe tu mensaje</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                    </div>
+                    <button class="btn" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <p class="txt txt--small">Desarrollado por <a href="https://danirox.github.io/DaniRox-Portfolio/" target="_blank" class="txt txt--em">DaniRox</a></p>
+        <p class="txt txt--small">2022</p>
+
+    </footer>
+
+</body>
+</html>

@@ -43,13 +43,32 @@
     cursor: pointer;
 }
 
+.btn-loguin{
+    height: 3rem;
+    width: 108%;
+    margin: 1.2rem 0;
+}
 
 @media only screen and (min-width: 770px) {
     .btn-search {
         display: none;
     }
+
+    .btn {
+        height: 3em;
+    }
+
+    .btn-loguin{
+        height: 3.2rem;
+    }
 }
 
 @media only screen and (min-width: 1100px) {
+    .btn {
+        height: 3.2em;
+    }
 
+    .btn-loguin{
+        height: 3.4rem;
+    }
 }

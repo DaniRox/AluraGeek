@@ -1,0 +1,14 @@
+@import url(../styles.css);
+
+.form-loguin{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 770px) {
+    .form-loguin {
+        margin: 0;
+    }
+}

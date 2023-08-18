@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="./css/organisms/info-container.css">
     <link rel="stylesheet" href="./css/organisms/formulary.css">
 
-    <link rel="icon" href="./assets/icons/favicon.png" sizes="40x30">
+    <link rel="icon" href="./assets/icons/favicon.png" sizes="40x40">
     <title>AluraGeek</title>
 </head>
 <body>
@@ -70,7 +70,7 @@
 
                 <div class="div-subtitle">
                     <h1 class="subtitle">Star Wars</h1>
-                    <button class="btn-txt">Ver todo<img class="btn-img-arrow" src="./assets/icons/arrow.svg"></button>
+                    <button class="btn-txt" id="btn-store" onclick="displayArticles()">Ver todo<img class="btn-img-arrow" src="./assets/icons/arrow.svg"></button>
                 </div>
                 
                 <div class="items-container">
@@ -124,7 +124,7 @@
 
                 <div class="div-subtitle">
                     <h1 class="subtitle">Consolas</h1>
-                    <button class="btn-txt">Ver Todo<img src="./assets/icons/arrow.svg"></button>
+                    <button class="btn-txt" id="all-items">Ver Todo<img src="./assets/icons/arrow.svg"></button>
                 </div>
                 
                 <div class="items-container">
@@ -133,7 +133,7 @@
                         <img class="img-item"  src="./assets/img/item7.png" alt="imagen-producto">
                         <h1 class="txt txt--small">Control XYZ</h1>
                         <span class="txt txt--em">$ 60,00</span>
-                        <button class="btn-txt" >Ver producto</button>
+                        <button class="btn-txt">Ver producto</button>
                     </div>
 
                     <div class="item">
@@ -249,11 +249,11 @@
                 <form>
                     <span class="txt txt--em">Hable con nosotros</span>
                     <div class="group-input">
-                        <label for="nombre">Nombre</label>
+                        <label for="nombre" class="label">Nombre</label>
                         <input id="nombre" name="nombre" type="text" required>
                     </div>
                     <div class="group-input">
-                        <label for="mensaje">Escribe tu mensaje</label>
+                        <label for="mensaje" class="label">Escribe tu mensaje</label>
                         <textarea id="mensaje" name="mensaje"></textarea>
                     </div>
                     <button class="btn" type="submit">Enviar mensaje</button>
@@ -270,6 +270,8 @@
         <p class="txt txt--small">2022</p>
 
     </footer>
+
+    <script src="./js/scripts.js"></script>
     
 </body>
 </html>

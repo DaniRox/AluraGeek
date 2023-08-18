@@ -1,7 +1,7 @@
 @import url(../styles.css);
 
 .group-input {
-    border-bottom: 0.5px solid var(--outer-space);
+    border-bottom: 0.5px solid var(--silver);
     border-radius: 0.1rem;
     background-color: var(--white);
     margin: 1rem 0;

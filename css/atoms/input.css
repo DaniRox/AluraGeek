@@ -9,3 +9,26 @@ input, textarea{
     border: none;
     background-color: transparent;
 }
+
+input, textarea:focus-visible{
+    outline: none;
+}
+
+input::placeholder{
+    color: var(--silver);
+}
+
+.input-loguin{
+    border-bottom: 0.5px solid var(--silver);
+    border-radius: 0.1rem;
+    background-color: var(--white);
+    margin: 1rem 0;
+    padding: 0.8rem;
+    color: var(--outer-space);
+    width: 100%;
+    height: 2.6em;
+}
+
+.input-loguin::placeholder{
+    color: var(--silver);
+}
